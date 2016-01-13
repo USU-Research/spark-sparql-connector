@@ -13,7 +13,7 @@ This library is build with sbt.
 Use `sbt assembly` or `sbt +assembly` for cross compilation.
 
 ## Using with Spark shell
-This package can be added to  Spark using the `--packages` command line option.  For example, to include it when starting the spark shell:
+This package can be added to  Spark using the `--jars` command line option.  For example, to include it when starting the spark shell:
 
 ### Spark compiled with Scala 2.11
 ```
@@ -22,7 +22,7 @@ $SPARK_HOME/bin/spark-shell --jars spark-sparql-connector-spark1.5.2-scala2.11-1
 
 ### Spark compiled with Scala 2.10
 ```
-$SPARK_HOME/bin/spark-shell --jar spark-sparql-connector-spark1.5.2-scala2.10-1.0.0-SNAPSHOT.jar
+$SPARK_HOME/bin/spark-shell --jars spark-sparql-connector-spark1.5.2-scala2.10-1.0.0-SNAPSHOT.jar
 ```
 
 ### Scala example
@@ -38,6 +38,9 @@ WHERE {
 val dataFrame = sqlContext.sparqlQuery(service, query)
 dataFrame.show()
 ```
+
+## Using with PySpark shell
+When using the PySpark shell, this package must be added both to the driver and the executors by using the `--driver-class-path` and `--jars` command line options.  For example, to include it when starting the pyspark shell:
 
 ### PySpark shell compiled with Scala 2.11
 ```
