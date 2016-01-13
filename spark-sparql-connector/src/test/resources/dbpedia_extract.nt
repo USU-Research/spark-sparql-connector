@@ -1,0 +1,133 @@
+<http://dbpedia.org/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://dbpedia.org/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+<http://dbpedia.org/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dbo" .
+<http://dbpedia.org/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://dbpedia.org/ontology/" .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/title> "The DBpedia Ontology"@en .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/description> "\n              The DBpedia ontology provides the classes and properties used in the DBpedia data set.\n            "@en .
+<http://dbpedia.org/ontology/> <http://xmlns.com/foaf/0.1/homepage> <http://wiki.dbpedia.org/Ontology> .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/source> <http://mappings.dbpedia.org> .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/publisher> "DBpedia Maintainers" .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/creator> "DBpedia Maintainers and Contributors" .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/issued> "2008-11-17T12:00Z" .
+<http://dbpedia.org/ontology/> <http://purl.org/dc/terms/modified> "2015-04-10T13:58Z" .
+<http://dbpedia.org/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "4.0-SNAPSHOT"@en .
+<http://dbpedia.org/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "\n              This ontology is generated from the manually created specifications in the DBpedia Mappings\n              Wiki. Each release of this ontology corresponds to a new release of the DBpedia data set which\n              contains instance data extracted from the different language versions of Wikipedia. For\n              information regarding changes in this ontology, please refer to the DBpedia Mappings Wiki.\n            "@en .
+<http://dbpedia.org/ontology/> <http://creativecommons.org/ns#license> <http://www.gnu.org/copyleft/fdl.html> .
+<http://dbpedia.org/ontology/> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-sa/3.0/> .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "basketbal competitie"@nl .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u039F\u03BC\u03BF\u03C3\u03C0\u03BF\u03BD\u03B4\u03AF\u03B1 \u039A\u03B1\u03BB\u03B1\u03B8\u03BF\u03C3\u03C6\u03B1\u03AF\u03C1\u03B9\u03C3\u03B7\u03C2"@el .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de basketball"@fr .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "lega di pallacanestro"@it .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "liga de baloncesto"@es .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "basketball league"@en .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\uB18D\uAD6C \uB9AC\uADF8"@ko .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u30D0\u30B9\u30B1\u30C3\u30C8\u30DC\u30FC\u30EB\u30EA\u30FC\u30B0"@ja .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Basketball-Liga"@de .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "a group of sports teams that compete against each other in Basketball"@en .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/BasketballLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:BasketballLeague> .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "wielerronde"@nl .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u039F\u03BC\u03BF\u03C3\u03C0\u03BF\u03BD\u03B4\u03AF\u03B1 \u03A0\u03BF\u03B4\u03B7\u03BB\u03B1\u03C3\u03AF\u03B1\u03C2"@el .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de cyclisme"@fr .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "liga de ciclismo"@es .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "cycling league"@en .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\uC0AC\uC774\uD074 \uB9AC\uADF8"@ko .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Rad-Liga"@de .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "a group of sports teams that compete against each other in Cycling"@en .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/CyclingLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:CyclingLeague> .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "curling competitie"@nl .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u03C0\u03C1\u03C9\u03C4\u03AC\u03B8\u03BB\u03B7\u03BC\u03B1 curling"@el .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de curling"@fr .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "liga de curling"@es .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "curling league"@en .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\uCEEC\uB9C1 \uB9AC\uADF8"@ko .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Curling-Liga"@de .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "a group of sports teams that compete against each other in Curling"@en .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/CurlingLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:CurlingLeague> .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#label> "wielerploeg"@nl .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#label> "\u03BF\u03BC\u03AC\u03B4\u03B1 \u03C0\u03BF\u03B4\u03B7\u03BB\u03B1\u03C3\u03AF\u03B1\u03C2"@el .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#label> "squadra di ciclismo"@it .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#label> "cycling team"@en .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#label> "\uC0AC\uC774\uD074 \uD300"@ko .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#label> "Radsportteam"@de .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsTeam> .
+<http://dbpedia.org/ontology/CyclingTeam> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:CyclingTeam> .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/2000/01/rdf-schema#label> "speedway league"@en .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Speedway Liga"@de .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u03C0\u03C1\u03C9\u03C4\u03AC\u03B8\u03BB\u03B7\u03BC\u03B1 \u03B1\u03C5\u03C4\u03BF\u03BA\u03B9\u03BD\u03B7\u03C4\u03BF\u03B4\u03C1\u03CC\u03BC\u03BF\u03C5"@el .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de speedway"@fr .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of sports teams that compete against each other in motorcycle speedway racing."@en .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/SpeedwayLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:SpeedwayLeague> .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#label> "videogames league"@en .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u03C0\u03C1\u03C9\u03C4\u03AC\u03B8\u03BB\u03B7\u03BC\u03B1 \u03B2\u03B9\u03BD\u03C4\u03B5\u03BF\u03C0\u03B1\u03B9\u03C7\u03BD\u03B9\u03B4\u03B9\u03CE\u03BD"@el .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Videospiele-Liga"@de .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de jeux vid\u00E9o"@fr .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of sports teams or person that compete against each other in videogames."@en .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "\u0388\u03BD\u03B1 \u03C3\u03CD\u03BD\u03BF\u03BB\u03BF \u03BF\u03BC\u03AC\u03B4\u03C9\u03BD \u03AE \u03B1\u03C4\u03CC\u03BC\u03C9\u03BD \u03C0\u03BF\u03C5 \u03B1\u03BD\u03C4\u03B1\u03B3\u03C9\u03BD\u03AF\u03B6\u03BF\u03BD\u03C4\u03B1\u03B9 \u03C3\u03B5 \u03B7\u03BB\u03B5\u03BA\u03C4\u03C1\u03BF\u03BD\u03B9\u03BA\u03AC \u03C0\u03B1\u03B9\u03C7\u03BD\u03AF\u03B4\u03B9\u03B1."@el .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/VideogamesLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:VideogamesLeague> .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "motorcycle racing league"@en .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Motorradrennen Liga"@de .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de courses motocycliste"@fr .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/2000/01/rdf-schema#label> "motorrace competitie"@nl .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "a group of sports teams or bikerider that compete against each other in Motorcycle Racing"@en .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/MotorcycleRacingLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:MotorcycleRacingLeague> .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#label> "voetbal competitie"@nl .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u039F\u03BC\u03BF\u03C3\u03C0\u03BF\u03BD\u03B4\u03AF\u03B1 \u03A0\u03BF\u03B4\u03BF\u03C3\u03C6\u03B1\u03AF\u03C1\u03BF\u03C5"@el .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue de football"@fr .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#label> "soccer league"@en .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Fu\u00DFball Liga"@de .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of sports teams that compete against each other in soccer."@en .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/SoccerLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:SoccerLeague> .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ijshockey competitie"@nl .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u03C0\u03C1\u03C9\u03C4\u03AC\u03B8\u03BB\u03B7\u03BC\u03B1 \u03C7\u03CC\u03BA\u03B5\u03CB"@el .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue d'hockey sur glace"@fr .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ice hockey league"@en .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Eishockey-Liga"@de .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "a group of sports teams that compete against each other in Ice Hockey."@en .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/IceHockeyLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:IceHockeyLeague> .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "canadian football competitie"@nl .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u03BA\u03B1\u03BD\u03B1\u03B4\u03B9\u03BA\u03AE \u03AD\u03BD\u03C9\u03C3\u03B7 \u03C0\u03BF\u03B4\u03BF\u03C3\u03C6\u03B1\u03AF\u03C1\u03BF\u03C5"@el .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "canadian football league"@fr .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "lega di football canadese"@it .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "liga de f\u00FAtbol canadiense"@en .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\uCE90\uB098\uB2E4 \uD48B\uBCFC \uB9AC\uADF8"@ko .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u30AB\u30CA\u30C7\u30A3\u30A2\u30F3\u30FB\u30D5\u30C3\u30C8\u30DC\u30FC\u30EB\u30FB\u30EA\u30FC\u30B0"@ja .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Kanadische Footballliga"@de .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of sports teams that compete against each other in canadian football league."@en .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "\u03AD\u03BD\u03B1 \u03C3\u03CD\u03BD\u03BF\u03BB\u03BF \u03B1\u03B8\u03BB\u03B7\u03C4\u03B9\u03BA\u03CE\u03BD \u03BF\u03BC\u03AC\u03B4\u03C9\u03BD \u03C0\u03BF\u03C5 \u03B1\u03BD\u03C4\u03B1\u03B3\u03C9\u03BD\u03AF\u03B6\u03BF\u03BD\u03C4\u03B1\u03B9 \u03BC\u03B5\u03C4\u03B1\u03BE\u03CD \u03C4\u03BF\u03C5\u03C2 \u03C3\u03C4\u03B7\u03BD \u039A\u03B1\u03BD\u03B1\u03B4\u03B9\u03BA\u03AE \u03AD\u03BD\u03C9\u03C3\u03B7 \u03C0\u03BF\u03B4\u03BF\u03C3\u03C6\u03B1\u03AF\u03C1\u03BF\u03C5"@el .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/SportsLeague> .
+<http://dbpedia.org/ontology/CanadianFootballLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:CanadianFootballLeague> .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "sport competitie"@nl .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\u0391\u03B8\u03BB\u03B7\u03C4\u03B9\u03BA\u03AE \u039F\u03BC\u03BF\u03C3\u03C0\u03BF\u03BD\u03B4\u03AF\u03B1"@el .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "ligue sportive"@fr .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "liga deportiva"@es .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "sports league"@en .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "\uC2A4\uD3EC\uCE20 \uB9AC\uADF8"@ko .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#label> "Sportliga"@de .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of sports teams or individual athletes that compete against each other in a specific sport."@en .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Organisation> .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q623109> .
+<http://dbpedia.org/ontology/SportsLeague> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:SportsLeague> .
+<http://research.usu.de/test> <http://research.usu.de/int> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://research.usu.de/test> <http://research.usu.de/double> "1.25E-4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://research.usu.de/test> <http://research.usu.de/boolean> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://research.usu.de/test> <http://research.usu.de/string> "foo" .
+<http://research.usu.de/test> <http://research.usu.de/timestamp> "2016-01-13T11:08:07Z" .
