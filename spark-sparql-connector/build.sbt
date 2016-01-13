@@ -68,9 +68,15 @@ parallelExecution in Test := false
 // Skip tests during assembly
 test in assembly := {}
 
+assemblyJarName in assembly := name.value + "-spark" + sparkVersion.value + "-scala" + scalaVersion.value.substring(0,4) + "-" + version.value + ".jar"
+
 excludedJars in assembly := {
   val cp = (fullClasspath in assembly).value
-  cp filter { x => x.data.getName.contains("slf4j") || x.data.getName.contains("log4j") || x.data.getName.startsWith("scala-library") }
+  cp filter { x => x.data.getName.contains("slf4j") ||
+   x.data.getName.contains("log4j") ||
+   x.data.getName.startsWith("scala-library") || 
+   x.data.getName.startsWith("jackson-") 
+  }
 }
 ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
   if (scalaBinaryVersion.value == "2.10") false

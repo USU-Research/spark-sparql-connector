@@ -18,7 +18,6 @@ import org.apache.jena.jdbc.mem.MemDriver
 case class SparqlRelation (
     service: String,
     query: String,
-    defaultGraph: String,
     userSchema: StructType)(@transient val sqlContext: SQLContext)
   extends BaseRelation with TableScan {
 

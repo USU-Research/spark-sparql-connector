@@ -3,10 +3,10 @@ package de.usu.research.sake.sparksparql
 import java.io.File
 import java.nio.charset.UnsupportedCharsetException
 import java.sql.Timestamp
-import org.apache.spark.sql.{SQLContext, Row, SaveMode}
-import org.apache.spark.{SparkContext, SparkException}
+import org.apache.spark.sql.{ SQLContext, Row, SaveMode }
+import org.apache.spark.{ SparkContext, SparkException }
 import org.apache.spark.sql.types._
-import org.scalatest.{BeforeAndAfterAll, FunSuite}
+import org.scalatest.{ BeforeAndAfterAll, FunSuite }
 import org.apache.spark.sql.DataFrame
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -15,7 +15,7 @@ import java.util.TimeZone
 class SparqlSuite extends FunSuite with BeforeAndAfterAll {
   //val dbpediaEndpoint = "http://ustst018-cep-node1:3030/dbpedia/query"
   val dbpediaEndpoint = "mem:dataset=src/test/resources/dbpedia_extract.nt"
-  
+
   private var sqlContext: SQLContext = _
 
   override protected def beforeAll(): Unit = {
@@ -41,7 +41,7 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
     assert(rows.size === 1)
     assert(rows(0).getString(0) === "The DBpedia Ontology")
   }
-  
+
   test("select *") {
     val frame = queryDbpedia("""PREFIX dbpo: <http://dbpedia.org/ontology/>
       | PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -56,7 +56,7 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
     val rows = frame.select("x").collect()
     assert(rows.size === 9)
   }
-  
+
   test("ask") {
     val frame = queryDbpedia("""PREFIX dbpo: <http://dbpedia.org/ontology/>
       | PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -70,7 +70,7 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
     assert(rows.size === 1)
     assert(rows(0).getString(0) === "true")
   }
-  
+
   test("ask with userschema") {
     val query = """PREFIX dbpo: <http://dbpedia.org/ontology/>
       | PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -98,11 +98,13 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
     val rows = df.select("Subject", "Predicate", "Object").collect()
     assert(rows.size === 9)
     val tuples = rows.map { r => (r.getString(0), r.getString(1), r.getString(2)) }
-    assert(tuples.count { t => t == ("http://dbpedia.org/ontology/SoccerLeague", 
+    assert(tuples.count { t =>
+      t == ("http://dbpedia.org/ontology/SoccerLeague",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-        "http://dbpedia.org/ontology/SportsLeague") } === 1)
+        "http://dbpedia.org/ontology/SportsLeague")
+    } === 1)
   }
-  
+
   test("describe") {
     val df = queryDbpedia("""PREFIX dbpo: <http://dbpedia.org/ontology/>
       | PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -116,11 +118,13 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
     val rows = df.select("Subject", "Predicate", "Object").collect()
     assert(rows.size > 5)
     val tuples = rows.map { r => (r.getString(0), r.getString(1), r.getString(2)) }
-    assert(tuples.count { t => t == ("http://dbpedia.org/ontology/SoccerLeague", 
+    assert(tuples.count { t =>
+      t == ("http://dbpedia.org/ontology/SoccerLeague",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-        "http://dbpedia.org/ontology/SportsLeague") } === 1)
+        "http://dbpedia.org/ontology/SportsLeague")
+    } === 1)
   }
-  
+
   test("datatypes") {
     val query = """PREFIX dbpo: <http://dbpedia.org/ontology/>
       | PREFIX test: <http://research.usu.de/>
@@ -134,11 +138,11 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
       |   test:test test:timestamp ?t .
       | }""".stripMargin
     val df = queryDbpedia(query, StructType(List(StructField("i", IntegerType, false),
-        StructField("d", DoubleType, false),
-        StructField("b", BooleanType, false),
-        StructField("s", StringType, false),
-        StructField("t", TimestampType, false))))
-    
+      StructField("d", DoubleType, false),
+      StructField("b", BooleanType, false),
+      StructField("s", StringType, false),
+      StructField("t", TimestampType, false))))
+
     assert(df.columns === Array("i", "d", "b", "s", "t"))
     val rows = df.select("i", "d", "b", "s", "t").collect()
     assert(rows.size === 1)
@@ -151,19 +155,19 @@ class SparqlSuite extends FunSuite with BeforeAndAfterAll {
     assert(d === 1.25E-4)
     assert(b === false)
     assert(s === "foo")
-    
+
     val t = row.getTimestamp(4)
     val sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
     sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
-    val prettyDate = sdf.format(t)    
+    val prettyDate = sdf.format(t)
     assert(prettyDate === "2016-01-13 11:08:07")
   }
-  
+
   private def queryDbpedia(query: String): DataFrame = {
-    sqlContext.sparqlSelect(dbpediaEndpoint, query)
+    sqlContext.sparqlQuery(dbpediaEndpoint, query)
   }
 
   private def queryDbpedia(query: String, schema: StructType): DataFrame = {
-    sqlContext.sparqlSelect(dbpediaEndpoint, query, userSchema = schema)
+    sqlContext.sparqlQuery(dbpediaEndpoint, query, userSchema = schema)
   }
 }
