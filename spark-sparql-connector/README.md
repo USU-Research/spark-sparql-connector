@@ -64,3 +64,8 @@ WHERE {
 df = sqlContext.read.format('de.usu.research.sake.sparksparql').options(service='http://dbpedia.org/sparql', query=query).load()
 df.collect()
 ```
+
+## Implementation details
+- SPARQL queries are parsed using Apache Jena ARQ to extract the result variables. Then the queries are performed using Apache Jena JDBC driver
+- Currently partitioning of the query results is not supported
+- All result columns are mapped to StringType by default. To use a mapping to other types like IntegerType, BooleanType, TimestampType, etc take a look to the test suite `SparqlSuite`

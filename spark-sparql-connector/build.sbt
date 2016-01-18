@@ -42,15 +42,13 @@ spAppendScalaVersion := true
 spIncludeMaven := true
 
 pomExtra := (
-  <url>https://github.com/databricks/spark-csv</url>
+  <url>https://github.com/USU-Research/spark-sparql-connector</url>
   <licenses>
-<!--  
     <license>
       <name>Apache License, Version 2.0</name>
       <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
       <distribution>repo</distribution>
     </license>
-    -->
   </licenses>
   <scm>
     <url>git@github.com:USU-Research/spark-sparql-connector.git</url>
@@ -58,7 +56,7 @@ pomExtra := (
   </scm>
   <developers>
     <developer>
-      <id>usimweinde</id>
+      <id>MartinWeindel</id>
       <name>Martin Weindel</name>
     </developer>
   </developers>)
