@@ -1,6 +1,6 @@
 name := "spark-sparql-connector"
 
-version := "1.0.0-SNAPSHOT"
+version := "1.0.0-beta1"
 
 organization := "de.usu.research"
 
