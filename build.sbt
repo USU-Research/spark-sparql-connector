@@ -66,7 +66,7 @@ parallelExecution in Test := false
 // Skip tests during assembly
 test in assembly := {}
 
-assemblyJarName in assembly := name.value + "-spark" + sparkVersion.value + "-scala" + scalaVersion.value.substring(0,4) + "-" + version.value + ".jar"
+assemblyJarName in assembly := name.value + "-" + version.value + "-s_" + scalaVersion.value.substring(0,4) + ".jar"
 
 excludedJars in assembly := {
   val cp = (fullClasspath in assembly).value
